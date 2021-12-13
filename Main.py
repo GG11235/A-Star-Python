@@ -39,16 +39,17 @@ def dijkstra_search_example():
 
 def a_star_search_example():
     came_from, cost_so_far = a_star_search(diagram4, (1, 4), (7, 8))
+    print(diagram4.weights)
     draw_grid(diagram4, width=3, point_to=came_from, start=(1, 4), goal=(7, 8))
     print()
     draw_grid(diagram4, width=3, number=cost_so_far, start=(1, 4), goal=(7, 8))
 
 
 if __name__ == '__main__':
-    draw_square_grid_example()
+    # draw_square_grid_example()
 #    breadth_first_search_simple_graph_example()
 #    breadth_first_search_square_grid_example()
-    print('Dijkstra')
-    dijkstra_search_example()
+    # print('Dijkstra')
+    # dijkstra_search_example()
     print('A Star')
     a_star_search_example()
